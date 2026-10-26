@@ -1,307 +1,220 @@
 # 🍔 FoodieHub Express
 
-> **Order smarter. Serve faster.**
-> A modern food ordering and restaurant management platform designed to deliver a seamless experience for customers and restaurant owners through an intuitive, responsive, and feature-rich interface.
+**Discover. Order. Enjoy.**
 
----
+FoodieHub Express is a modern, responsive food-ordering web application designed to make exploring food, discovering restaurants, and managing orders simple and enjoyable. It features a polished interface, interactive menus, shopping cart functionality, and personalized wishlist management.
 
 ## ✨ Features
 
-🍽️ **Food Discovery**
+- 🍕 **Food Discovery** — Explore food categories, featured dishes, popular meals, and restaurants.
+- 🔎 **Smart Menu Search** — Search dishes and filter by category, vegetarian preference, price, and rating.
+- 🏪 **Restaurant Explorer** — Browse restaurants, search by cuisine or location, and filter open restaurants.
+- 🛒 **Shopping Cart** — Add and remove dishes, update quantities, and calculate order totals.
+- 🎟️ **Coupon Discounts** — Try demo coupon codes such as `WELCOME50`, `FREEDEL`, and `PIZZABOGO`.
+- ❤️ **Wishlist** — Save your favorite dishes for later.
+- 🌙 **Dark & Light Themes** — Switch between themes for a personalized browsing experience.
+- 📱 **Responsive UI** — Designed to work across desktop, tablet, and mobile screen sizes.
+- ⚡ **Reusable Components** — Maintainable UI components and client-side navigation.
+- 💾 **Local Storage** — Preserve cart, wishlist, and theme preferences in the browser.
 
-* Browse restaurant menus
-* Explore food categories
-* Search meals quickly
-* View detailed food information
+## 🛠️ Tech Stack
 
-🛒 **Online Ordering**
-
-* Add items to cart
-* Manage quantities
-* Quick checkout process
-* Smooth ordering experience
-
-⚡ **Real-Time Experience**
-
-* Instant UI updates
-* Dynamic menu interactions
-* Fast page navigation
-* Responsive user feedback
-
-🏪 **Restaurant Management**
-
-* Manage food listings
-* Update menu items
-* Organize categories
-* Monitor available products
-
-📱 **Responsive Design**
-
-* Desktop optimized
-* Tablet friendly
-* Mobile responsive
-* Cross-device compatibility
-
-🎨 **Modern User Interface**
-
-* Clean layouts
-* Professional design
-* Smooth navigation
-* User-focused experience
-
----
+| Technology | Purpose |
+|---|---|
+| React 19 | User interface |
+| TypeScript | Type-safe development |
+| Vite | Development server and build tool |
+| TanStack Router | Client-side routing |
+| Tailwind CSS 4 | Styling and responsive layouts |
+| Radix UI | Accessible UI primitives |
+| Lucide React | Icons |
+| Sonner | Toast notifications |
+| ESLint | Code quality |
+| Prettier | Code formatting |
 
 ## 📂 Project Structure
 
 ```text
 foodiehub-express/
-│
-├── .lovable/
 ├── public/
 ├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── hooks/
 │   ├── assets/
-│   ├── services/
-│   └── styles/
-│
+│   │   └── hero-food.jpg
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── FoodCard.tsx
+│   │   ├── RestaurantCard.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── Footer.tsx
+│   │   └── SectionHeader.tsx
+│   ├── context/
+│   │   └── AppContext.tsx
+│   ├── data/
+│   │   └── foodData.ts
+│   ├── hooks/
+│   ├── lib/
+│   ├── routes/
+│   │   ├── index.tsx
+│   │   ├── menu.tsx
+│   │   ├── restaurants.tsx
+│   │   ├── cart.tsx
+│   │   └── wishlist.tsx
+│   ├── styles.css
+│   ├── router.tsx
+│   └── server.ts
 ├── .gitignore
-├── .prettierignore
-├── .prettierrc
-├── bun.lock
-├── bunfig.toml
-├── components.json
-├── eslint.config.js
-├── package-lock.json
 ├── package.json
+├── package-lock.json
 ├── run.bat
-├── tsconfig.json
-└── vite.config.ts
+└── README.md
 ```
 
----
+## 🚀 Getting Started
 
-## ⚙️ Installation
+### Prerequisites
 
-### 1️⃣ Clone Repository
+Install the following on your computer:
+
+- [Node.js](https://nodejs.org/) — preferably a current LTS release.
+- npm — included with Node.js.
+
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/rsamwilson2323-cloud/foodiehub-express.git
-
+git clone https://github.com/YOUR-USERNAME/foodiehub-express.git
 cd foodiehub-express
 ```
 
-### 2️⃣ Install Dependencies
+Replace `YOUR-USERNAME` with your GitHub username.
+
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-or
-
-```bash
-bun install
-```
-
-### 3️⃣ Start Development Server
+### 3. Start the Development Server
 
 ```bash
 npm run dev
 ```
 
-or
-
-```bash
-bun run dev
-```
-
-Windows users can also launch:
-
-```bash
-run.bat
-```
-
----
-
-## 📦 Requirements
+Open the local URL displayed in your terminal, usually:
 
 ```text
-Node.js      v18+
-NPM          Latest Version
-or
-Bun          Latest Version
+http://localhost:5173
 ```
 
----
+**Windows users:** You can also double-click `run.bat` to install dependencies and start the development server.
 
-## 🖥️ Technology Stack
-
-| Technology           | Purpose              |
-| -------------------- | -------------------- |
-| React                | Frontend Development |
-| TypeScript           | Type Safety          |
-| Vite                 | Build Tool           |
-| Modern UI Components | User Interface       |
-| Bun                  | Package Management   |
-| ESLint               | Code Quality         |
-| Prettier             | Formatting           |
-
----
-
-## 🎯 Core Modules
-
-### 🍽️ Food Menu
-
-* Food Listings
-* Categories
-* Item Details
-* Menu Organization
-
-### 🛒 Shopping Cart
-
-* Add Items
-* Remove Items
-* Quantity Controls
-* Order Summary
-
-### 👤 User Experience
-
-* Responsive Navigation
-* Interactive Components
-* Fast Browsing
-* Modern Interface
-
-### 🏪 Restaurant Dashboard
-
-* Menu Management
-* Product Updates
-* Category Management
-* Restaurant Operations
-
----
-
-## ⚡ Platform Workflow
-
-```text
-Customer Visits
-        │
-        ▼
-Browse Food Menu
-        │
-        ▼
-Add Items To Cart
-        │
-        ▼
-Place Order
-        │
-        ▼
-Restaurant Processing
-        │
-        ▼
-Order Completion
-```
-
----
-
-## 🚀 Development Commands
-
-Install packages:
-
-```bash
-npm install
-```
-
-Start development:
+## 🧪 Available Commands
 
 ```bash
 npm run dev
 ```
 
-Build production:
+Starts the development server.
 
 ```bash
 npm run build
 ```
 
-Preview build:
+Builds the application for production.
 
 ```bash
 npm run preview
 ```
 
-Run linting:
+Previews the production build locally.
 
 ```bash
 npm run lint
 ```
 
----
+Checks the project for linting issues.
 
-## 🌟 Highlights
+```bash
+npm run format
+```
 
-✅ Modern Food Ordering Platform
+Formats project files using Prettier.
 
-✅ Responsive Design
+## 🛍️ Application Pages
 
-✅ Fast User Experience
+| Page | Description |
+|---|---|
+| Home | Featured dishes, categories, offers, and restaurant discovery |
+| Menu | Searchable and filterable food listings |
+| Restaurants | Restaurant search and open-status filtering |
+| Cart | Quantity management, coupon discounts, and total calculation |
+| Wishlist | View and manage saved favorite dishes |
 
-✅ Professional UI
+## 💡 How It Works
 
-✅ Restaurant Management Features
+1. Browse food categories and restaurants.
+2. Search and filter dishes based on your preferences.
+3. Add your favorite meals to the cart.
+4. Adjust quantities and try available demo coupons.
+5. Save dishes to your wishlist.
+6. Switch between light and dark themes.
 
-✅ TypeScript Support
+## 🔮 Future Improvements
 
-✅ Production Ready
+- User authentication and account management
+- Secure online payment integration
+- Backend API and database integration
+- Real order placement and order history
+- Live delivery tracking
+- Restaurant owner dashboard
+- Food ratings and customer reviews
+- Personalized food recommendations
+- Notifications and promotional offers
 
-✅ Scalable Architecture
+## ⚠️ Project Notes
 
----
+FoodieHub Express currently uses frontend functionality and locally defined application data. Cart and wishlist persistence use browser local storage.
 
-## 🔮 Future Enhancements
+Coupon codes demonstrate discount calculations; they do not process real payments. Live delivery, production order processing, authentication, and backend restaurant management require additional implementation and integration.
 
-📦 Real-Time Order Tracking
+Food images may depend on externally hosted image resources, so their availability can vary.
 
-💳 Online Payment Integration
+## 🎯 Project Goals
 
-🔔 Push Notifications
-
-⭐ Reviews & Ratings
-
-📍 Live Delivery Tracking
-
-🎟️ Coupons & Discounts
-
-🤖 AI Food Recommendations
-
-📱 Mobile Application
-
----
-
-## ⚠️ Disclaimer
-
-This project is intended for educational, learning, portfolio, and demonstration purposes. Additional integrations and security measures may be required for production deployment.
-
----
+- Build a modern food-ordering interface.
+- Practice React and TypeScript development.
+- Implement reusable components and application state management.
+- Explore responsive design and client-side routing.
+- Develop a portfolio project for learning and demonstration.
 
 ## 👨‍💻 Author
 
-**Sam Wilson**
+**Ebinezer Jeba Samuel**
 
-🌐 GitHub — https://github.com/rsamwilson2323-cloud
+Aspiring Software Engineer | AI & ML Enthusiast | Web Developer
 
-💼 LinkedIn — https://www.linkedin.com/in/sam-wilson-14b554385
-
-📧 Email — [rsamwilson2323@gmail.com](mailto:rsamwilson2323@gmail.com)
+- **GitHub:** [Ebinezer-cloud](https://github.com/Ebinezer-cloud)
+- **LinkedIn:** [Ebinezer N](https://www.linkedin.com/in/ebinezer-n-ab8b61392/)
+- **LeetCode:** [6UPtksX3aM](https://leetcode.com/u/6UPtksX3aM/)
 
 ---
 
 ## 📜 License
 
-Licensed under the **MIT License**.
+This project is intended for learning, development, and portfolio demonstration. See the repository's `LICENSE` file for the applicable license terms.
 
 ---
 
 <div align="center">
-<b>🍔 FoodieHub Express — Bringing restaurants and customers together through technology.</b>
+
+### 🍔 FoodieHub Express
+
+**Designed & Developed by Ebinezer Jeba Samuel**
+
+*Good food. Smooth browsing. Better experiences.*
+
+[GitHub](https://github.com/Ebinezer-cloud) · [LinkedIn](https://www.linkedin.com/in/ebinezer-n-ab8b61392/) · [LeetCode](https://leetcode.com/u/6UPtksX3aM/)
+
+</div>
+*Good food. Smooth browsing. Better experiences.*
+
 </div>
